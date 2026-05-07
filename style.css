@@ -283,7 +283,7 @@ footer{
     }
 
 }
-/* Projects Section */
+/* Projects */
 
 .projects-grid{
     display:grid;
@@ -297,17 +297,16 @@ footer{
     border-radius:18px;
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
     transition:0.3s;
-    border-top:5px solid #4f46e5;
 }
 
 .project-card:hover{
-    transform:translateY(-6px);
+    transform:translateY(-5px);
 }
 
 .project-card h3{
-    color:#4f46e5;
-    margin-bottom:12px;
-    font-size:22px;
+    color:#111827;
+    margin-bottom:10px;
+    font-size:24px;
 }
 
 .project-card .tech{
