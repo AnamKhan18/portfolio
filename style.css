@@ -283,3 +283,40 @@ footer{
     }
 
 }
+/* Projects Section */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+    border-top:5px solid #4f46e5;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+}
+
+.project-card h3{
+    color:#4f46e5;
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.project-card .tech{
+    color:#7c3aed;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    line-height:1.8;
+    font-size:15px;
+}
