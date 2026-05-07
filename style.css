@@ -1,56 +1,152 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
+* {
     margin: 0;
-    background: linear-gradient(to right, #ece9e6, #ffffff);
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6fb;
+    color: #333;
+}
+
+/* Navigation Bar */
+
+nav {
+    background: #6c63ff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #dcdcff;
+}
+
+/* Header */
 
 header {
     background: linear-gradient(135deg, #6c63ff, #4a47a3);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 70px 20px;
 }
 
-.profile-pic {
+.profile-circle {
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    width: 120px;
-    margin-bottom: 10px;
-    border: 3px solid white;
+    background: white;
+    color: #6c63ff;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
 }
+
+.subtitle {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.intro {
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+/* Sections */
 
 section {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 12px;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
+    width: 85%;
+    margin: 40px auto;
 }
 
-section:hover {
-    transform: translateY(-5px);
-}
-
-h2 {
+section h2 {
     color: #6c63ff;
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 
-ul {
-    padding-left: 20px;
-}
+/* Cards */
 
-.contact a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 15px;
-    background: #6c63ff;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
 
-.contact a:hover {
+.card:hover {
+    transform: translateY(-5px) scale(1.01);
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Contact Buttons */
+
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-buttons a {
+    text-decoration: none;
+    background: #6c63ff;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.contact-buttons a:hover {
     background: #4a47a3;
+}
+
+/* Footer */
+
+footer {
+    background: #6c63ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
