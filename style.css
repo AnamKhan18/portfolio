@@ -329,3 +329,21 @@ footer{
     margin-bottom:18px;
     border:1px solid #ddd;
 }
+/* View Buttons */
+
+.view-btn{
+    display:inline-block;
+    margin-top:18px;
+    padding:12px 22px;
+    background:#4f46e5;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.view-btn:hover{
+    background:#7c3aed;
+    transform:translateY(-3px);
+}
